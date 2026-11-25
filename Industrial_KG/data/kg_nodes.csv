@@ -1,0 +1,28 @@
+node_id,node_type,name,dataset,unit,code,description,source_id,condition,condition_operator,power_formula,independent_of_parameters,provenance,validation_status
+MACHINE_001,Machine,Industrial Milling Machine,AI4I 2020,,,,,,,,,,
+SENSOR_001,Sensor,Air Temperature,,K,,,,,,,,,
+SENSOR_002,Sensor,Process Temperature,,K,,,,,,,,,
+SENSOR_003,Sensor,Rotational Speed,,rpm,,,,,,,,,
+SENSOR_004,Sensor,Torque,,Nm,,,,,,,,,
+SENSOR_005,Sensor,Tool Wear,,min,,,,,,,,,
+FM_TWF,Failure_Mode,Tool Wear Failure,,,TWF,Failure associated with tool wear,SRC_001,,,,,,
+FM_HDF,Failure_Mode,Heat Dissipation Failure,,,HDF,Failure associated with heat dissipation conditions,SRC_001,,,,,,
+FM_PWF,Failure_Mode,Power Failure,,,PWF,Failure associated with process power limits,SRC_001,,,,,,
+FM_OSF,Failure_Mode,Overstrain Failure,,,OSF,Failure associated with tool wear and torque thresholds,SRC_001,,,,,,
+FM_RNF,Failure_Mode,Random Failure,,,RNF,Random failure independent of operating parameters,SRC_001,,,,,,
+SYM_001,Symptom,Excessive Tool Wear,,,,Tool wear reaches the documented failure interval.,SRC_001,,,,,,
+SYM_002,Symptom,Low Temperature Difference,,,,Air and process temperature difference falls below 8.6 K.,SRC_001,,,,,,
+SYM_003,Symptom,Low Rotational Speed,,,,Rotational speed falls below 1380 rpm in the documented HDF condition.,SRC_001,,,,,,
+SYM_004,Symptom,Abnormal Process Power,,,,Process power is below 3500 W or above 9000 W.,SRC_001,,,,,,
+SYM_005,Symptom,Excessive Tool Stress,,,,Tool wear multiplied by torque exceeds the product-specific threshold.,SRC_001,,,,,,
+SYM_006,Symptom,Random Failure Event,,,,Failure occurs independently of operating parameters.,SRC_001,,,,,,
+EVID_TWF,Evidence,Tool Wear Failure Interval,,minutes,,The tool is replaced or fails at a random tool-wear time between 200 and 240 minutes.,SRC_001,200 <= tool_wear <= 240,,,,,
+EVID_HDF,Evidence,Heat Dissipation Failure Condition,,K and rpm,,Both conditions must hold: air-process temperature difference is below 8.6 K AND rotational speed is below 1380 rpm.,SRC_001,temperature_difference < 8.6 AND rotational_speed < 1380,AND,,,,
+EVID_PWF,Evidence,Process Power Failure Range,,Watts,,Process power is below 3500 W or above 9000 W. Power is calculated using torque multiplied by angular speed.,SRC_001,power < 3500 OR power > 9000,OR,torque * rotational_speed * 2*pi/60,,,
+EVID_OSF,Evidence,Product-Specific Overstrain Thresholds,,minute-Nm,,"Tool wear multiplied by torque exceeds the threshold for the product quality: L=11000, M=12000, H=13000.",SRC_001,tool_wear * torque > product_specific_threshold,,,,,
+EVID_RNF,Evidence,Random Failure Probability,,probability,,"The dataset documentation describes a 0.1 percent probability of random failure per process, independent of operating parameters.",SRC_001,probability = 0.001,,,True,,
+REM_001,Remedy,Inspect Tool Condition,,,,Inspect tool wear and review the tool replacement schedule.,PROJECT_KNOWLEDGE,,,,,Project-generated investigation recommendation,Not independently validated
+REM_002,Remedy,Inspect Thermal System,,,,Inspect the cooling and thermal management system and verify temperature and RPM readings.,PROJECT_KNOWLEDGE,,,,,Project-generated investigation recommendation,Not independently validated
+REM_003,Remedy,Inspect Power and Load Conditions,,,,"Review machine load, torque, rotational speed, and calculated process power.",PROJECT_KNOWLEDGE,,,,,Project-generated investigation recommendation,Not independently validated
+REM_004,Remedy,Inspect Tool Stress Conditions,,,,Inspect tool condition and verify the applicable product-specific tool wear and torque threshold.,PROJECT_KNOWLEDGE,,,,,Project-generated investigation recommendation,Not independently validated
+REM_005,Remedy,Review Machine Event Logs,,,,Review machine logs and investigate other possible factors because this failure is documented as independent of operating parameters.,PROJECT_KNOWLEDGE,,,,,Project-generated investigation recommendation,Not independently validated

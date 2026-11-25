@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d20" for="edge" attr.name="provenance" attr.type="string"/>
+<key id="d19" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d18" for="edge" attr.name="relationship" attr.type="string"/>
+<key id="d17" for="node" attr.name="validation_status" attr.type="string"/>
+<key id="d16" for="node" attr.name="provenance" attr.type="string"/>
+<key id="d15" for="node" attr.name="independent_of_parameters" attr.type="boolean"/>
+<key id="d14" for="node" attr.name="power_formula" attr.type="string"/>
+<key id="d13" for="node" attr.name="condition_operator" attr.type="string"/>
+<key id="d12" for="node" attr.name="condition" attr.type="string"/>
+<key id="d11" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d10" for="node" attr.name="description" attr.type="string"/>
+<key id="d9" for="node" attr.name="code" attr.type="string"/>
+<key id="d8" for="node" attr.name="unit" attr.type="string"/>
+<key id="d7" for="node" attr.name="dataset" attr.type="string"/>
+<key id="d6" for="node" attr.name="name" attr.type="string"/>
+<key id="d5" for="node" attr.name="node_type" attr.type="string"/>
+<key id="d4" for="graph" attr.name="source_registry" attr.type="string"/>
+<key id="d3" for="graph" attr.name="relationship_types" attr.type="string"/>
+<key id="d2" for="graph" attr.name="node_types" attr.type="string"/>
+<key id="d1" for="graph" attr.name="description" attr.type="string"/>
+<key id="d0" for="graph" attr.name="project" attr.type="string"/>
+<graph edgedefault="directed"><data key="d0">AI-Driven Industrial Knowledge Intelligence</data>
+<data key="d1">Graph-enhanced industrial fault diagnosis</data>
+<data key="d2">Machine,Sensor,Symptom,Failure_Mode,Cause,Evidence,Remedy</data>
+<data key="d3">HAS_SENSOR,SHOWS_SYMPTOM,INDICATES,HAS_CAUSE,SUPPORTED_BY,SUGGESTS_REMEDY,RELEVANT_TO</data>
+<data key="d4">{"SRC_001": {"title": "AI4I 2020 Predictive Maintenance Dataset Documentation", "publisher": "UCI Machine Learning Repository", "url": "https://archive.ics.uci.edu/dataset/601/ai4i", "source_type": "Official Dataset Documentation"}, "PROJECT_KNOWLEDGE": {"title": "Project-Generated Investigation Recommendations", "publisher": "Project Team", "url": "Not applicable", "source_type": "Project-generated knowledge"}}</data>
+<node id="MACHINE_001">
+  <data key="d5">Machine</data>
+  <data key="d6">Industrial Milling Machine</data>
+  <data key="d7">AI4I 2020</data>
+</node>
+<node id="SENSOR_001">
+  <data key="d5">Sensor</data>
+  <data key="d6">Air Temperature</data>
+  <data key="d8">K</data>
+</node>
+<node id="SENSOR_002">
+  <data key="d5">Sensor</data>
+  <data key="d6">Process Temperature</data>
+  <data key="d8">K</data>
+</node>
+<node id="SENSOR_003">
+  <data key="d5">Sensor</data>
+  <data key="d6">Rotational Speed</data>
+  <data key="d8">rpm</data>
+</node>
+<node id="SENSOR_004">
+  <data key="d5">Sensor</data>
+  <data key="d6">Torque</data>
+  <data key="d8">Nm</data>
+</node>
+<node id="SENSOR_005">
+  <data key="d5">Sensor</data>
+  <data key="d6">Tool Wear</data>
+  <data key="d8">min</data>
+</node>
+<node id="FM_TWF">
+  <data key="d5">Failure_Mode</data>
+  <data key="d6">Tool Wear Failure</data>
+  <data key="d9">TWF</data>
+  <data key="d10">Failure associated with tool wear</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="FM_HDF">
+  <data key="d5">Failure_Mode</data>
+  <data key="d6">Heat Dissipation Failure</data>
+  <data key="d9">HDF</data>
+  <data key="d10">Failure associated with heat dissipation conditions</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="FM_PWF">
+  <data key="d5">Failure_Mode</data>
+  <data key="d6">Power Failure</data>
+  <data key="d9">PWF</data>
+  <data key="d10">Failure associated with process power limits</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="FM_OSF">
+  <data key="d5">Failure_Mode</data>
+  <data key="d6">Overstrain Failure</data>
+  <data key="d9">OSF</data>
+  <data key="d10">Failure associated with tool wear and torque thresholds</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="FM_RNF">
+  <data key="d5">Failure_Mode</data>
+  <data key="d6">Random Failure</data>
+  <data key="d9">RNF</data>
+  <data key="d10">Random failure independent of operating parameters</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="SYM_001">
+  <data key="d5">Symptom</data>
+  <data key="d6">Excessive Tool Wear</data>
+  <data key="d10">Tool wear reaches the documented failure interval.</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="SYM_002">
+  <data key="d5">Symptom</data>
+  <data key="d6">Low Temperature Difference</data>
+  <data key="d10">Air and process temperature difference falls below 8.6 K.</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="SYM_003">
+  <data key="d5">Symptom</data>
+  <data key="d6">Low Rotational Speed</data>
+  <data key="d10">Rotational speed falls below 1380 rpm in the documented HDF condition.</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="SYM_004">
+  <data key="d5">Symptom</data>
+  <data key="d6">Abnormal Process Power</data>
+  <data key="d10">Process power is below 3500 W or above 9000 W.</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="SYM_005">
+  <data key="d5">Symptom</data>
+  <data key="d6">Excessive Tool Stress</data>
+  <data key="d10">Tool wear multiplied by torque exceeds the product-specific threshold.</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="SYM_006">
+  <data key="d5">Symptom</data>
+  <data key="d6">Random Failure Event</data>
+  <data key="d10">Failure occurs independently of operating parameters.</data>
+  <data key="d11">SRC_001</data>
+</node>
+<node id="EVID_TWF">
+  <data key="d5">Evidence</data>
+  <data key="d11">SRC_001</data>
+  <data key="d6">Tool Wear Failure Interval</data>
+  <data key="d10">The tool is replaced or fails at a random tool-wear time between 200 and 240 minutes.</data>
+  <data key="d12">200 &lt;= tool_wear &lt;= 240</data>
+  <data key="d8">minutes</data>
+</node>
+<node id="EVID_HDF">
+  <data key="d5">Evidence</data>
+  <data key="d11">SRC_001</data>
+  <data key="d6">Heat Dissipation Failure Condition</data>
+  <data key="d10">Both conditions must hold: air-process temperature difference is below 8.6 K AND rotational speed is below 1380 rpm.</data>
+  <data key="d12">temperature_difference &lt; 8.6 AND rotational_speed &lt; 1380</data>
+  <data key="d8">K and rpm</data>
+  <data key="d13">AND</data>
+</node>
+<node id="EVID_PWF">
+  <data key="d5">Evidence</data>
+  <data key="d11">SRC_001</data>
+  <data key="d6">Process Power Failure Range</data>
+  <data key="d10">Process power is below 3500 W or above 9000 W. Power is calculated using torque multiplied by angular speed.</data>
+  <data key="d12">power &lt; 3500 OR power &gt; 9000</data>
+  <data key="d8">Watts</data>
+  <data key="d13">OR</data>
+  <data key="d14">torque * rotational_speed * 2*pi/60</data>
+</node>
+<node id="EVID_OSF">
+  <data key="d5">Evidence</data>
+  <data key="d11">SRC_001</data>
+  <data key="d6">Product-Specific Overstrain Thresholds</data>
+  <data key="d10">Tool wear multiplied by torque exceeds the threshold for the product quality: L=11000, M=12000, H=13000.</data>
+  <data key="d12">tool_wear * torque &gt; product_specific_threshold</data>
+  <data key="d8">minute-Nm</data>
+</node>
+<node id="EVID_RNF">
+  <data key="d5">Evidence</data>
+  <data key="d11">SRC_001</data>
+  <data key="d6">Random Failure Probability</data>
+  <data key="d10">The dataset documentation describes a 0.1 percent probability of random failure per process, independent of operating parameters.</data>
+  <data key="d12">probability = 0.001</data>
+  <data key="d8">probability</data>
+  <data key="d15">True</data>
+</node>
+<node id="REM_001">
+  <data key="d5">Remedy</data>
+  <data key="d6">Inspect Tool Condition</data>
+  <data key="d10">Inspect tool wear and review the tool replacement schedule.</data>
+  <data key="d16">Project-generated investigation recommendation</data>
+  <data key="d17">Not independently validated</data>
+  <data key="d11">PROJECT_KNOWLEDGE</data>
+</node>
+<node id="REM_002">
+  <data key="d5">Remedy</data>
+  <data key="d6">Inspect Thermal System</data>
+  <data key="d10">Inspect the cooling and thermal management system and verify temperature and RPM readings.</data>
+  <data key="d16">Project-generated investigation recommendation</data>
+  <data key="d17">Not independently validated</data>
+  <data key="d11">PROJECT_KNOWLEDGE</data>
+</node>
+<node id="REM_003">
+  <data key="d5">Remedy</data>
+  <data key="d6">Inspect Power and Load Conditions</data>
+  <data key="d10">Review machine load, torque, rotational speed, and calculated process power.</data>
+  <data key="d16">Project-generated investigation recommendation</data>
+  <data key="d17">Not independently validated</data>
+  <data key="d11">PROJECT_KNOWLEDGE</data>
+</node>
+<node id="REM_004">
+  <data key="d5">Remedy</data>
+  <data key="d6">Inspect Tool Stress Conditions</data>
+  <data key="d10">Inspect tool condition and verify the applicable product-specific tool wear and torque threshold.</data>
+  <data key="d16">Project-generated investigation recommendation</data>
+  <data key="d17">Not independently validated</data>
+  <data key="d11">PROJECT_KNOWLEDGE</data>
+</node>
+<node id="REM_005">
+  <data key="d5">Remedy</data>
+  <data key="d6">Review Machine Event Logs</data>
+  <data key="d10">Review machine logs and investigate other possible factors because this failure is documented as independent of operating parameters.</data>
+  <data key="d16">Project-generated investigation recommendation</data>
+  <data key="d17">Not independently validated</data>
+  <data key="d11">PROJECT_KNOWLEDGE</data>
+</node>
+<edge source="MACHINE_001" target="SENSOR_001" id="0">
+  <data key="d18">HAS_SENSOR</data>
+</edge>
+<edge source="MACHINE_001" target="SENSOR_002" id="0">
+  <data key="d18">HAS_SENSOR</data>
+</edge>
+<edge source="MACHINE_001" target="SENSOR_003" id="0">
+  <data key="d18">HAS_SENSOR</data>
+</edge>
+<edge source="MACHINE_001" target="SENSOR_004" id="0">
+  <data key="d18">HAS_SENSOR</data>
+</edge>
+<edge source="MACHINE_001" target="SENSOR_005" id="0">
+  <data key="d18">HAS_SENSOR</data>
+</edge>
+<edge source="SENSOR_001" target="FM_HDF" id="0">
+  <data key="d18">RELEVANT_TO</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SENSOR_002" target="FM_HDF" id="0">
+  <data key="d18">RELEVANT_TO</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SENSOR_003" target="FM_HDF" id="0">
+  <data key="d18">RELEVANT_TO</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SENSOR_003" target="FM_PWF" id="0">
+  <data key="d18">RELEVANT_TO</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SENSOR_004" target="FM_PWF" id="0">
+  <data key="d18">RELEVANT_TO</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SENSOR_004" target="FM_OSF" id="0">
+  <data key="d18">RELEVANT_TO</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SENSOR_005" target="FM_TWF" id="0">
+  <data key="d18">RELEVANT_TO</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SENSOR_005" target="FM_OSF" id="0">
+  <data key="d18">RELEVANT_TO</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="FM_TWF" target="EVID_TWF" id="0">
+  <data key="d18">SUPPORTED_BY</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="FM_TWF" target="REM_001" id="0">
+  <data key="d18">SUGGESTS_REMEDY</data>
+  <data key="d20">Project-generated recommendation</data>
+</edge>
+<edge source="FM_HDF" target="EVID_HDF" id="0">
+  <data key="d18">SUPPORTED_BY</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="FM_HDF" target="REM_002" id="0">
+  <data key="d18">SUGGESTS_REMEDY</data>
+  <data key="d20">Project-generated recommendation</data>
+</edge>
+<edge source="FM_PWF" target="EVID_PWF" id="0">
+  <data key="d18">SUPPORTED_BY</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="FM_PWF" target="REM_003" id="0">
+  <data key="d18">SUGGESTS_REMEDY</data>
+  <data key="d20">Project-generated recommendation</data>
+</edge>
+<edge source="FM_OSF" target="EVID_OSF" id="0">
+  <data key="d18">SUPPORTED_BY</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="FM_OSF" target="REM_004" id="0">
+  <data key="d18">SUGGESTS_REMEDY</data>
+  <data key="d20">Project-generated recommendation</data>
+</edge>
+<edge source="FM_RNF" target="EVID_RNF" id="0">
+  <data key="d18">SUPPORTED_BY</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="FM_RNF" target="REM_005" id="0">
+  <data key="d18">SUGGESTS_REMEDY</data>
+  <data key="d20">Project-generated recommendation</data>
+</edge>
+<edge source="SYM_001" target="FM_TWF" id="0">
+  <data key="d18">INDICATES</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SYM_002" target="FM_HDF" id="0">
+  <data key="d18">INDICATES</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SYM_003" target="FM_HDF" id="0">
+  <data key="d18">INDICATES</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SYM_004" target="FM_PWF" id="0">
+  <data key="d18">INDICATES</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SYM_005" target="FM_OSF" id="0">
+  <data key="d18">INDICATES</data>
+  <data key="d19">SRC_001</data>
+</edge>
+<edge source="SYM_006" target="FM_RNF" id="0">
+  <data key="d18">INDICATES</data>
+  <data key="d19">SRC_001</data>
+</edge>
+</graph></graphml>

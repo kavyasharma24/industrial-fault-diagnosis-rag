@@ -1,0 +1,6 @@
+failure_mode_id,failure_mode,sensor_count,symptom_count,evidence_count,recommendation_count
+FM_TWF,Tool Wear Failure,1,1,1,1
+FM_HDF,Heat Dissipation Failure,3,2,1,1
+FM_PWF,Power Failure,2,1,1,1
+FM_OSF,Overstrain Failure,2,1,1,1
+FM_RNF,Random Failure,0,1,1,1

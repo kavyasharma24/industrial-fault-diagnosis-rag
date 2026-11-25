@@ -1,0 +1,10 @@
+Metric,Value
+total_nodes,27
+total_relationships,29
+total_node_types_defined,7
+total_relationship_types_defined,7
+failure_modes_covered,5
+graph_is_directed,True
+graph_is_multigraph,True
+graph_structure_validation,PASSED
+csv_validation,PASSED

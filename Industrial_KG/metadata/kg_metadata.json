@@ -1,0 +1,50 @@
+{
+    "project": "AI-Driven Industrial Knowledge Intelligence",
+    "description": "Graph-Enhanced Agentic RAG for Industrial Fault Diagnosis",
+    "graph_file": "Industrial_KG/graphs/industrial_knowledge_graph.graphml",
+    "total_nodes": 27,
+    "total_relationships": 29,
+    "node_types": [
+        "Machine",
+        "Sensor",
+        "Symptom",
+        "Failure_Mode",
+        "Cause",
+        "Evidence",
+        "Remedy"
+    ],
+    "relationship_types": [
+        "HAS_SENSOR",
+        "SHOWS_SYMPTOM",
+        "INDICATES",
+        "HAS_CAUSE",
+        "SUPPORTED_BY",
+        "SUGGESTS_REMEDY",
+        "RELEVANT_TO"
+    ],
+    "source_registry": {
+        "SRC_001": {
+            "title": "AI4I 2020 Predictive Maintenance Dataset Documentation",
+            "publisher": "UCI Machine Learning Repository",
+            "url": "https://archive.ics.uci.edu/dataset/601/ai4i",
+            "source_type": "Official Dataset Documentation"
+        },
+        "PROJECT_KNOWLEDGE": {
+            "title": "Project-Generated Investigation Recommendations",
+            "publisher": "Project Team",
+            "url": "Not applicable",
+            "source_type": "Project-generated knowledge"
+        }
+    },
+    "evaluation": {
+        "total_nodes": 27,
+        "total_relationships": 29,
+        "total_node_types_defined": 7,
+        "total_relationship_types_defined": 7,
+        "failure_modes_covered": 5,
+        "graph_is_directed": true,
+        "graph_is_multigraph": true,
+        "graph_structure_validation": "PASSED",
+        "csv_validation": "PASSED"
+    }
+}

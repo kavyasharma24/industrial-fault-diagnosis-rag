@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Modern Soft Industrial — Light Theme (Default) */
+  --color-bg: #F3F5F2;
+  --color-card: #FFFFFF;
+  --color-sidebar: #FFFFFF;
+  --color-surface: #DCE8E2;
+  --color-teal: #527C78;
+  --color-teal-hover: #436562;
+  --color-text: #34454A;
+  --color-text-muted: #627980;
+  --color-border: #DCE4E0;
+  --color-dusty-blue: #B8CCDC;
+  --color-lavender: #D9CBE8;
+  --color-peach: #E9C9B5;
+
+  color-scheme: light;
+}
+
+.dark {
+  /* Modern Soft Industrial — Dark Theme */
+  --color-bg: #202C32;
+  --color-card: #293A40;
+  --color-sidebar: #34464B;
+  --color-surface: #30434A;
+  --color-teal: #527C78;
+  --color-teal-hover: #63938E;
+  --color-text: #E7ECEB;
+  --color-text-muted: #9BB0B6;
+  --color-border: #3B5058;
+  --color-dusty-blue: #829DB5;
+  --color-lavender: #A995C0;
+  --color-peach: #D5A98F;
+
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom scrollbars matching soft industrial look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-teal);
+}
