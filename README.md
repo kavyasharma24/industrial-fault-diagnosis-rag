@@ -516,3 +516,13 @@ This project was developed as an academic and practical implementation of **Grap
 
 - **Dataset Credit**: AI4I 2020 Predictive Maintenance Dataset, donated to the UCI Machine Learning Repository by Stephan Matzka (Hochschule für Technik und Wirtschaft Berlin).
 - **Icons & UI Design**: Built with Lucide Icons and Tailwind CSS.
+
+---
+
+## 👩‍💻 Author
+
+**Kavya Sharma**  
+B.Tech CSE (AI & ML)  
+ABES Engineering College
+
+GitHub: [@kavyasharma24](https://github.com/kavyasharma24)
